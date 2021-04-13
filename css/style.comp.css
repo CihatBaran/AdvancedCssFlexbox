@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit; }
+
+html {
+  /* font-size: 10px; this is same as below*/
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  font-family: 'Rubik', sans-serif; }
+
+.heading--primary {
+  display: inline-block;
+  font-size: 8rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  background-image: linear-gradient(to bottom right, #94cef8, #073d64);
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; }

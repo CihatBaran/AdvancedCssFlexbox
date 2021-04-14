@@ -3,16 +3,28 @@
 *::before {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
   /* font-size: 10px; this is same as below*/
-  font-size: 62.5%; // width > 1200, < 1800 ?
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
-  box-sizing: border-box;
   padding: 3rem;
   font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  
+  color: $color-grey-dark-2;
 }

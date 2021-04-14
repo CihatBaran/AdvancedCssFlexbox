@@ -1,9 +1,17 @@
 @import 'abstract/variables';
+@import 'abstract/mixins';
 
 @import 'base/animations';
 @import 'base/base';
 @import 'base/typography';
 @import 'base/utilities';
+
+@import "components/heading";
+
+@import 'layout/main';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/hotel-view';
 
 @import 'abstract/variables';
 

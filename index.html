@@ -1,21 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>trillo &mdash; Your all-in-one booking app</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <h1 class="heading--primary">Flex box</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>trillo &mdash; Your all-in-one booking app</title>
 
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <img src="img/logo.png" alt="Trill Logo" class="logo">
+
+      <form action="#" class="search">
+        <input type="text" class="search__input" placeholder="Search Hotels">
+        <button class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="img/svg/search.svg#fa-search-icon__use"></use>
+          </svg>
+        </button>
+      </form>
+
+      <nav class="user-nav">
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/svg/chat.svg#fa-comment-dots-icon__use"></use>
+          </svg>
+          <span class="user-nav__notification">7</span>
+        </div>
+
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/svg/bookmark-solid.svg#fa-bookmark-icon__use"></use>
+          </svg>
+          <span class="user-nav__notification">11</span>
+        </div>
+
+        <div class="user-nav__user">
+          <img src="img/user.jpg" alt="user" class="user-nav__user-photo">
+          <span class="user-nav__user-name">Cihat Baran</span>
+        </div>
+
+      </nav>
+    </header>
+
+    <div class="content">
+      <nav class="sidebar">
+        <ul class="side-nav">
+          <li class="side-nav-item side-nav-item--active">
+            <a href="#" class="side-nav-link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/svg/home-solid.svg#fa-home-icon__use"></use>
+              </svg> <span>HOTEL</span>
+            </a>
+          </li>
+          
+          <li class="side-nav-item">
+            <a href="#" class="side-nav-link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/svg/plane-departure-solid.svg#fa-plane-departure-icon__use"></use>
+              </svg> <span>FLIGHT</span>
+            </a>
+          </li>
+          
+          <li class="side-nav-item">
+            <a href="#" class="side-nav-link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/svg/key-solid.svg#fa-key-icon__use"></use>
+              </svg> <span>CAR RENTAL</span>
+            </a>
+          </li>
+          
+          <li class="side-nav-item">
+            <a href="#" class="side-nav-link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/svg/map.svg#fa-map-icon__use"></use>
+              </svg> <span>TOURS</span>
+            </a>
+          </li>
+        </ul>
+        
+        <div class="copy-right">
+          2021 &copy; Cihat Baran, <br /> All rights reserved
+        </div>
+      </nav>
+
+      <main class="hotel-view">
+        <div class="gallery">
+          <figure class="gallery__item">
+            <img src="img/hotel-1.jpg" alt="Hotel 1" class="gallery__photo">
+          </figure>
+          
+          <figure class="gallery__item">
+            <img src="img/hotel-2.jpg" alt="Hotel 1" class="gallery__photo">
+          </figure>
+          
+          <figure class="gallery__item">
+            <img src="img/hotel-3.jpg" alt="Hotel 1" class="gallery__photo">
+          </figure>
+        </div>
+        
+        <div class="heading">
+          <div class="heading__primary-box">
+            <h1 class="heading__primary">Panama,Paranda Hotel</h1>
+            <div class="heading__rating-box">
+              <svg class="heading__rating-box__icon">
+                <use xlink:href="img/svg/star.svg#fa-star-icon__use"></use>
+              </svg>
+              <svg class="heading__rating-box__icon">
+                <use xlink:href="img/svg/star.svg#fa-star-icon__use"></use>
+              </svg>
+              <svg class="heading__rating-box__icon">
+                <use xlink:href="img/svg/star.svg#fa-star-icon__use"></use>
+              </svg>
+              <svg class="heading__rating-box__icon">
+                <use xlink:href="img/svg/star.svg#fa-star-icon__use"></use>
+              </svg>
+              <svg class="heading__rating-box__icon rating-box__icon--last">
+                <use xlink:href="img/svg/star.svg#fa-star-icon__use"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="heading__detail-box">
+            <div class="heading__detail-box--location">
+              <svg class="heading__rating-box__icon rating-box__icon--last">
+                <use xlink:href="img/svg/pinner.svg#fa-map-maker-dots-icon__use"></use>
+              </svg>
+              <span>Boquete,Panama</span>
+            </div>
+            <div class="heading__detail-box--vote">
+              <span class="heading__detail-box--vote-rating">8.6</span>
+              <span class="heading__detail-box--vote-qty">429 Votes</span>
+            </div>
+          </div>
+        </div>
+        
+      </main>
     </div>
-  </body>
+
+  </div>
+
+
+  </div>
+</body>
+
 </html>

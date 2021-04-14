@@ -1,21 +1,21 @@
-@import 'abstract/variables';
-@import 'abstract/mixins';
+@import "abstract/variables";
+@import "abstract/mixins";
 
-@import 'base/animations';
-@import 'base/base';
-@import 'base/typography';
-@import 'base/utilities';
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
 @import "components/heading";
 @import "components/detail";
 @import "components/button";
 @import "components/cta";
 
-@import 'layout/main';
-@import 'layout/header';
-@import 'layout/navigation';
-@import 'layout/hotel-view';
+@import "layout/main";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/hotel-view";
 
-@import 'abstract/variables';
+@import "abstract/variables";
 
-@import 'pages/home';
+@import "pages/home";

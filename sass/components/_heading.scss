@@ -1,8 +1,9 @@
 .heading {
     display: flex;
     justify-content: space-between;
-    box-shadow: $light-box-shadow;
+    box-shadow: $strong-box-shadow;
     height: 7rem;
+    border-bottom: 1px solid $color-grey-light-2;
 
     &__primary-box {
         margin-left: 2rem;
@@ -73,32 +74,3 @@
         }
     }
 }
-
-
-
-// <div class="heading">
-//           <div class="heading__primary-box">
-//             <h1 class="heading__primary">Panama Paranda Hotel</h1>
-//             <div class="rating-box">
-//               <svg class="rating-box__icon">
-//                 <use xlink:href="img/svg/star.svg#fa-star-icon__use"></use>
-//               </svg>
-//               <svg class="rating-box__icon">
-//                 <use xlink:href="img/svg/star.svg#fa-star-icon__use"></use>
-//               </svg>
-//               <svg class="rating-box__icon">
-//                 <use xlink:href="img/svg/star.svg#fa-star-icon__use"></use>
-//               </svg>
-//               <svg class="rating-box__icon">
-//                 <use xlink:href="img/svg/star.svg#fa-star-icon__use"></use>
-//               </svg>
-//               <svg class="rating-box__icon rating-box__icon--last">
-//                 <use xlink:href="img/svg/star.svg#fa-star-icon__use"></use>
-//               </svg>
-//             </div>
-//           </div>
-//           <div class="heading__detail-box">
-//             <div class="heading__detail-box--location"></div>
-//             <div class="heading__detail-box--vote"></div>
-//           </div>
-//         </div>

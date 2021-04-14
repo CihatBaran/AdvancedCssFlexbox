@@ -27,7 +27,7 @@ html {
   font-size: 62.5%; }
   @media only screen and (min-width: 112.5em) {
     html {
-      font-size: 80%; } }
+      font-size: 67%; } }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
@@ -450,9 +450,6 @@ body {
   @media only screen and (max-width: 37.5em) {
     .side-nav {
       justify-content: space-between; } }
-  @media only screen and (max-width: 25em) {
-    .side-nav {
-      flex-direction: column; } }
   .side-nav-item {
     position: relative;
     margin-bottom: 0.5rem; }
@@ -460,6 +457,9 @@ body {
       .side-nav-item {
         margin-bottom: 0px;
         padding: 0.7rem; } }
+    @media only screen and (max-width: 25em) {
+      .side-nav-item {
+        flex-grow: 1; } }
   .side-nav-item::before {
     content: "";
     position: absolute;
@@ -492,11 +492,24 @@ body {
     @media only screen and (max-width: 37.5em) {
       .side-nav-link:visited, .side-nav-link:link {
         padding: 1rem; } }
+    @media only screen and (max-width: 25em) {
+      .side-nav-link:visited, .side-nav-link:link {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0.3rem; } }
   .side-nav__icon {
     height: 1.75rem;
     width: 1.75rem;
     fill: currentColor;
     margin-right: 2rem; }
+    @media only screen and (max-width: 25em) {
+      .side-nav__icon {
+        margin: 1rem auto; }
+        .side-nav__icon-text {
+          display: block;
+          text-align: center;
+          width: 100%; } }
 
 .copy-right {
   text-align: center;
